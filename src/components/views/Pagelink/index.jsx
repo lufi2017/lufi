@@ -46,7 +46,7 @@ class Pagelink extends Component {
 
               {
                 title: '项目详细',
-                path: '/proDetail',
+                path: '/detail/detailXm',
                 color:'#f5c577',
               },
               {

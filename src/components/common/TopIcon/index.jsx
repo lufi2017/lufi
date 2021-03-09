@@ -13,11 +13,11 @@ class TopIcon extends Component {
               return (
                   <Col key={nanoid()} xs={24} sm={12} md={8} lg={6} xl={4} xxl={4}>
                     <div className="Gutter-box ">
-                      <div className="i-iconbox">
-                        <div className="icon" style={{background:`${iconObj.color}`}}><i className={iconObj.iconClassName}/></div>
+                      <div className="Iconbox">
+                        <div className="Icon" style={{background:`${iconObj.color}`}}><i className={iconObj.iconClassName}/></div>
                         <a href="#" target="_blank" rel="noreferrer">
-                          <div className="text">{iconObj.title}
-                            <div className="number" style={{color:`${iconObj.color}`}}>{iconObj.num}</div>
+                          <div className="Text">{iconObj.title}
+                            <div className="Number" style={{color:`${iconObj.color}`}}>{iconObj.num}</div>
                           </div>
                         </a>
                       </div>

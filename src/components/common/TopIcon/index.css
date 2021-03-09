@@ -1,9 +1,9 @@
-.i-iconbox {
+.Iconbox {
   overflow: hidden;
   padding: 15px;
   background: #fff;
 }
-.i-iconbox .icon {
+.Iconbox .Icon {
   width: 40px;
   height: 40px;
   float: left;
@@ -13,10 +13,10 @@
   font-size: 14px;
   color: #fff;
 }
-.i-iconbox .icon i {
+.Iconbox .Icon i {
   font-size: 20px;
 }
-.i-iconbox .text {
+.Iconbox .Text {
   width: calc(100% - 60px);
   float: right;
   text-overflow: ellipsis;
@@ -24,6 +24,7 @@
   white-space: nowrap;
   font-size: 14px;
 }
-.i-iconbox .number {
+.Iconbox .Number {
   font-size: 16px;
 }
+/*# sourceMappingURL=index.css.map */

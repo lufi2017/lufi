@@ -120,7 +120,7 @@ a:focus {
               .Td-selected{ background: #eaf3fe;}
             }
           }
-          td{ border-bottom: 1px solid #e5e5e5; padding:14px 10px;  white-space: nowrap; background: #fff; font-size: 14px;
+          td{ border-bottom: 1px solid #f0f0f0; padding:14px 10px;  white-space: nowrap; background: #fff; font-size: 14px;
             &:first-child{ border-left: 2px solid #fff;}
 
           }
@@ -156,7 +156,7 @@ a:focus {
             &:hover{
               td{background:#fff;}
             }
-            td{border-right:1px solid #e5e5e5;
+            td{border-right:1px solid #f0f0f0;
               &:first-child{border-left: 1px solid #e5e5e5;}
             }
           }
@@ -203,6 +203,29 @@ a:focus {
   &.DotGreen{ background:#07b982; }
   &.DotBlue{ background:#1eb1f3; }
 }
+.HasAnchor{ padding-right: 200px;}
+.FixnavRight-box {
+  position: fixed;
+  padding:10px 20px 10px 20px;
+  border-radius:5px;
+  display: block;
+  background:rgba(0,0,0,.1);
+  top: 100px;
+  right: 10px;
+  z-index: 1111;
+}
+.FixnavTit{position: relative; background: @primary-color;  width: 100%;  text-align:center; padding: 5px; border-radius: 3px; font-weight:bold; color:#fff; text-align:center;  font-size:1em;}
+.FixnavRight { border-radius:10px;padding-top: 10px; padding-left: 0;}
+.FixnavRight li {color: #666; cursor: pointer;position:relative;padding: 0 0 0 10px;font-size: 14px;line-height: 30px;
+  &:hover{color: #0097d4;}
+  &:before{ position:absolute; left:0px; top:13px; content:''; width:4px; height:4px; background:#999; border-radius:50%;}
+  &.Factive {font-weight: bold;color:#0097d4;z-index: 88;color:#0097d4;
+    &:before{ width:6px; height:6px; left:0px; top:12px; background:#0097d4;}
+  }
+}
+
+
+
 @media screen and (min-width: 1601px) {
 }
 
@@ -217,5 +240,7 @@ a:focus {
 }
 
 @media screen and  (max-width: 576px) {
+  .FixnavRight-box{ display: none;}
+  .HasAnchor{ padding-right:0;}
 }
 

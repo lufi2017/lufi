@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import {Row,Col} from "antd";
 
-import TopIcon from "../../../common/TopIcon";//顶部icon
 import ProcessDone from "../HomeCommon/ProcessDone";//已办流程
 import ProcessUndo from "../HomeCommon/ProcessUndo";//未办流程
-import NoticeFinancial from "../HomeCommon/NoticeFinancial";
 import NoticeNews from "../HomeCommon/NoticeNews";//新闻通知
 import RiskRatingAntd from "../HomeCommon/RiskRatingAntd";
 import FundlistAntd from "../HomeCommon/FundlistAntd";
@@ -17,10 +15,7 @@ class HomeFk extends Component {
   componentDidMount() {
     Commonjs.tabsClick();
   }
-
-
   render() {
-
     return (
         <>
           <Row>

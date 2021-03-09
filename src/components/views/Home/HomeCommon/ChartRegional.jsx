@@ -51,7 +51,7 @@ class ChartRegional extends Component {
           {
             name: '项目数量',
             type: 'map',
-            mapType: 'china', // 自定义扩展图表类型
+            map: 'china', // 自定义扩展图表类型
             roam: true,//是否开启鼠标缩放和平移漫游
             zoom: 1.2,   //这里是关键，一定要放在 series中
             mapLocation: {

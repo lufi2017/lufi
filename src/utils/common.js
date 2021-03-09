@@ -79,6 +79,48 @@ var Commonjs = {
         $(this).siblings('ul.page').children('li').last().attr('sta', 'b')
       }
     })
+  },
+  fixednavClick:function () {
+    var click_quick = null;
+    var last_scroll_num = 0;
+    $(window).scroll(function() {
+      var w_top = $(window).scrollTop();
+      // 循环页面正文中定位锚点 找到定位位置
+      $('.Tabs-item').each(function(i) {
+        var flag;
+        // 80 代表是导航条占据的高度
+        if ($(this).offset().top - 160 >= w_top) {
+          flag = click_quick !== null ? click_quick : i - 1;
+          // 滚动了才会触发清除点击项记录
+          if (last_scroll_num != w_top && w_top > 0) {
+            click_quick = null;
+          }
+
+          $('.FixnavRight li[sta]').removeClass('Factive');
+          $('.FixnavRight li[sta=' + i + ']').addClass('Factive')
+          last_scroll_num = w_top;
+          return false;
+        }
+      })
+    })
+
+    $('#nav a').click(function() {
+      $('#nav a').removeClass("c");
+      $(this).addClass("c");
+    });
+
+    $(document).on('click', '.FixnavRight li', function() {
+      var sta = $(this).attr('sta');
+      $(this).siblings().removeClass('Factive')
+      $(this).addClass('Factive')
+      console.log(sta)
+      //        $(window).scrollTop($('#'+s+'1').offset().top);
+      var _H1 = $('.p-top').height()
+      var _height = $('.Tabs-item[sta=' + sta + ']').offset().top;
+      $('html,body').animate({scrollTop: _height}, 200)
+
+    });
+
   }
 };
 export default Commonjs;
