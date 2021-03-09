@@ -1,0 +1,42 @@
+.parttitle {
+  width: 100%;
+  font-size: 15px;
+  color: #7fc5eb;
+  margin: 0 0 10px 0;
+}
+.iconbox-root {
+  display: block;
+  width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.iconbox-root .icon-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f4f8fb;
+  margin: 0 auto;
+  padding: 15px;
+}
+.iconbox-root .icon-wrap .iconbox {
+  width: 60px;
+  height: 60px;
+  background: #8fb6da;
+  border-radius: 4px;
+  margin: 15px auto;
+  line-height: 60px;
+}
+.iconbox-root .icon-wrap .iconbox .icon {
+  font-size: 36px;
+  vertical-align: middle;
+  color: #fff;
+}
+.iconbox-root .textbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.ant-typography {
+  background: #fff;
+}

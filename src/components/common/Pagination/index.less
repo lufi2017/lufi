@@ -1,0 +1,19 @@
+.Toolbar-root{ width: 100%; overflow: hidden;}
+.Pagination-root{ width:100%; padding:10px; background:#fff; border-top: 1px solid #dee1e7; line-height:30px; height:50px; z-index:999;
+  .page-text{ width:auto; float:left;}
+  .pagebox{ width:auto; float:right;
+    .page-prev,.page-next{ width:28px;height:30px; text-align: center; line-height:28px; cursor:pointer; border:1px solid #ededed; text-align:center; border-radius:3px; float:left; margin:0 5px;}
+    .page-prev{}
+    .page-next{}
+    ul.page{ width:auto; float:left;
+      li{width:30px; height:30px;background: #fff; box-shadow: none; text-align:center; line-height:28px; border:1px solid #dee1e7; border-radius:3px; margin:0 3px; float:left; cursor:pointer;}
+    }
+  }
+  .page-click{ color:@primary-color !important; border:1px solid @primary-color !important;}
+  .gotopage{ width:auto; float:right;
+    button,input{ width:40px; border:1px solid #dee1e7; height:28px; margin:0 5px;  border-radius:3px; text-align:center;}
+    button{ cursor:pointer; height: 30px; line-height: 20px; width:50px; padding:0 10px;background: #f4f8fb; border-color: @primary-color;color:#0073aa;
+      &:hover{ background:#e9f6ff;}
+    }
+  }
+}

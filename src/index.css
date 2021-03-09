@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0f2f5;
+  font: 16px/1.5 #666;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 0.05s;
+}
+a {
+  color: #638ca6;
+  text-decoration: none;
+}
+a.link {
+  color: #638ca6;
+  text-decoration: none;
+}
+/*54a9df*/
+a:hover {
+  color: #0073aa;
+  text-decoration: none;
+}
+a:active {
+  color: #638ca6;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  -moz-outline: none;
+}
+::-webkit-scrollbar {
+  /*滚动条整体样�?*/
+  width: 6px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+  background: #c9d3dc;
+}
+::-webkit-scrollbar-track {
+  /*滚动条里面轨�?*/
+  /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+  border-radius: 10;
+  background: #fff;
+}
+.Gutter-box {
+  padding: 8px;
+}
+.WrapBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+.Tabs-scroller {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #eaedf2;
+}
+.Tabs-scroller .Tabs-container {
+  width: calc(100% - 60px);
+  float: left;
+  background: #ccc;
+}
+.Tabs-scroller .Tabs-container .Tabs-item {
+  width: auto;
+  float: left;
+}
+.active {
+  color: #54a9df;
+  border-bottom: 1px solid #54a9df;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 43px;
+  float: left;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
