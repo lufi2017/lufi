@@ -16,7 +16,6 @@ import '../index.less'
 class HomeFk extends Component {
   componentDidMount() {
     Commonjs.tabsClick();
-    Commonjs.pageClick()
   }
 
 

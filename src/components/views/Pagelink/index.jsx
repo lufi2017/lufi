@@ -40,23 +40,23 @@ class Pagelink extends Component {
             partData: [
               {
                 title: '项目列表',
-                path: '/pro/pro-list',
+                path: '/pro/proList',
                 color:'#96d788',
               },
 
               {
                 title: '项目详细',
-                path: '/pro-detail',
+                path: '/proDetail',
                 color:'#f5c577',
               },
               {
                 title: '基金列表',
-                path: 'fund/fund-list',
+                path: 'fund/fundList',
                 color:'#8fb6da',
               },
               {
                 title: '基金详细',
-                path: 'fund/fund-detail',
+                path: 'fund/fundDetail',
                 color:'#9ce1d6'}
             ]
           }]

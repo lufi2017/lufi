@@ -19,7 +19,6 @@ import '../index.less'
 class HomeGc extends Component {
   componentDidMount() {
     Commonjs.tabsClick();
-    Commonjs.pageClick()
   }
 
   state={

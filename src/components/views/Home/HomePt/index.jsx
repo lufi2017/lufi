@@ -13,7 +13,6 @@ import '../index.less'
 class HomePt extends Component {
   componentDidMount() {
     Commonjs.tabsClick();
-    Commonjs.pageClick()
   }
 
   render() {
